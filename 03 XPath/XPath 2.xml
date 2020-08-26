@@ -1,0 +1,40 @@
+<!--
+Open this file in Visual Studio Code
+Download the extension XML Tools by Josh Johnson
+Press CTRL + SHIFT + P
+Type xpath and select XML Tools: Evaluate XPath
+Write your query there and see the result!
+-->
+
+<?xml version="1.0"?>
+
+<items>
+	<item id="item1">
+		<name>Mocha</name>
+		<type>Coffee</type>
+		<photo>photos/candles.jpg</photo>
+	</item>
+	<item id="item2">
+		<name>Decaf</name>
+		<type>Coffee</type>
+		<photo>photos/teacup.jpg</photo>
+	</item>
+	<item id="item3">
+		<name>Raspberry Zinger</name>
+		<type>Tea</type>
+		<photo>photos/teapot_white.jpg</photo>
+	</item>
+	<item id="item4">
+		<name>Earl Grey</name>
+		<type>Tea</type>
+		<photo>photos/teapot_bone.jpg</photo>
+	</item>
+</items>
+
+<!--
+Example Queries:
+- /items/item[type="Coffee"]/photo 
+(return the tags "photo" associated with tags "type" equals to "Coffee")
+	photo: photos/candles.jpg
+	photo: photos/teacup.jpg
+-->

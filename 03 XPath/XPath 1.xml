@@ -1,0 +1,46 @@
+<!--
+Open this file in Visual Studio Code
+Download the extension XML Tools by Josh Johnson
+Press CTRL + SHIFT + P
+Type xpath and select XML Tools: Evaluate XPath
+Write your query there and see the result!
+-->
+
+<?xml version="1.0"?>
+<BusinessCard>
+	<Name>Joe Marini</Name>
+	<phone type="mobile">(415) 555-4567</phone>
+	<phone type="work">(800) 555-9876</phone>
+	<phone>(510) 555-1234</phone>
+	<email>joe@joe.com</email>
+</BusinessCard>
+
+<!--
+Example Queries:
+- /BusinessCard 
+	Joe Marini
+	(415) 555-4567
+	(800) 555-9876
+	(510) 555-1234
+	joe@joe.com
+- /BusinessCard/Name
+	Name: Joe Marini
+- /BusinessCard/Name/text()
+	null: Joe Marini
+- /BusinessCard/phone[1]
+	phone: (415) 555-4567
+- /BusinessCard/phone[last()]
+	phone: (510) 555-1234
+- /BusinessCard/Name[contains(text(), "Joe")]
+	Name: Joe Marini
+- //phone[@type] (All the tags "phone" with attribute "type")
+	phone: (415) 555-4567
+	phone: (800) 555-9876
+- //phone[@type="work"]
+	phone: (800) 555-9876
+-->
+
+
+
+
+
