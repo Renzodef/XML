@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="sorting.xslt"?>
+<?xml-stylesheet type="text/xsl" href="02 repeating_items.xslt"?>
 <items>
 	<item available="no">
 		<name>Mocha</name>
@@ -11,7 +11,7 @@
 		<type>Coffee</type>
 		<photo>photos/teacup.jpg</photo>
 	</item>
-	<item available="soon">
+	<item available="no">
 		<name>Raspberry Zinger</name>
 		<type>Tea</type>
 		<photo>photos/teapot_white.jpg</photo>

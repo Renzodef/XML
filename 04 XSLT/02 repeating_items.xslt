@@ -1,6 +1,6 @@
 <?xml version="1.0"?> 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-
+	<!-- Match whatever is in the root tag -->
 	<xsl:template match="/">
 		<html>
 		<head>
@@ -12,7 +12,18 @@
 			</style>
 		</head>
 		<body>
-
+			<xsl:for-each select="/items/item">
+			<h1>
+				<img>
+					<xsl:attribute name="src">
+						<xsl:value-of select="photo"/>
+					</xsl:attribute>			
+				</img>
+				<xsl:value-of select="name"/>
+				<xsl:text> ... </xsl:text>
+				<xsl:value-of select="type"/>
+			</h1>
+			</xsl:for-each>
 		</body>
 		</html>
 	</xsl:template>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- BusinessCard has to contain a Name, 1 or more phone and 0 or more email -->
+<!ELEMENT BusinessCard (Name, phone+, email?)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!-- The attribute of phone is required and has to be one of these -->
+<!ATTLIST phone type (mobile | fax | work | home) #REQUIRED >
+<!ELEMENT email (#PCDATA)>

@@ -3,6 +3,7 @@
    <xsd:element name="BusinessCard">
       <xsd:complexType>
          <xsd:sequence>
+            <!-- By default the minOccurs and maxOccurs will be 1 -->
             <xsd:element name="Name" type="xsd:string"/>
 
             <xsd:element name="phone" maxOccurs="unbounded">
